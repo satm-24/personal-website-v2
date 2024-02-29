@@ -96,6 +96,7 @@
 		height: 80px;
 		overflow: hidden;
 		transition: height 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+		z-index: 2;
 	}
 
 	.buttons {

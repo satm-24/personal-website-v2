@@ -1,45 +1,65 @@
 <script>
 	import projects from '$lib/Projects';
+
+	if (typeof window !== 'undefined') {
+		particlesJS.load('particles-js', 'assets/particles.json', function () {
+			console.log('callback - particles.js config loaded');
+		});
+	}
 </script>
+
+<div id="particles-js" />
 
 <svelte:head>
 	<title>Gianmarco Cavallo — Projects</title>
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" async></script>
 </svelte:head>
 
-<div class="projectContainer">
-	<div class="projects">
-		<h1>Projects</h1>
-		<p class="note">
-			Note: most of my projects are under NDA so I am unable to share those projects. If there is
-			anything you would like to see further, please feel free to contact me.
-		</p>
-		{#each projects as project}
-			<div class="project">
-				<div class="header">
-					<h2>
-						{project.title}
-					</h2>
-					<div class="techsContainer">
-						Technologies:
-						<div class="techs">
-							{#each project.technologies as tech}
-								<div>{tech}</div>
-							{/each}
+<main>
+	<div class="projectContainer">
+		<div class="projects">
+			<h1>Projects</h1>
+			<p class="note">
+				Note: most of my projects are under NDA so I am unable to share those projects. If there is
+				anything you would like to see further, please feel free to contact me.
+			</p>
+			{#each projects as project}
+				<div class="project">
+					<div class="header">
+						<h2>
+							{project.title}
+						</h2>
+						<div class="techsContainer">
+							Technologies:
+							<div class="techs">
+								{#each project.technologies as tech}
+									<div>{tech}</div>
+								{/each}
+							</div>
 						</div>
 					</div>
+					<p>
+						{project.description}
+					</p>
+					<a href={project.url} target="_blank" rel="noreferrer">
+						<div class="button">Project url =></div>
+					</a>
 				</div>
-				<p>
-					{project.description}
-				</p>
-				<a href={project.url} target="_blank" rel="noreferrer">
-					<div class="button">Project url =></div>
-				</a>
-			</div>
-		{/each}
+			{/each}
+		</div>
 	</div>
-</div>
+</main>
 
 <style>
+	#particles-js {
+		position: fixed; /* or 'absolute' if you prefer */
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		z-index: 0; /* Ensure this is behind all other content */
+	}
+
 	.projectContainer {
 		width: 100%;
 		max-width: 900px;

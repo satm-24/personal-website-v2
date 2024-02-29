@@ -1,9 +1,18 @@
 <script>
 	import skills from '$lib/Skills';
+
+	if (typeof window !== 'undefined') {
+		particlesJS.load('particles-js', 'assets/particles.json', function () {
+			console.log('callback - particles.js config loaded');
+		});
+	}
 </script>
+
+<div id="particles-js" />
 
 <svelte:head>
 	<title>Gianmarco Cavallo — About</title>
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" async></script>
 </svelte:head>
 
 <div class="container">
@@ -36,6 +45,15 @@
 </div>
 
 <style>
+	#particles-js {
+		position: fixed; /* or 'absolute' if you prefer */
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		z-index: 0; /* Ensure this is behind all other content */
+	}
+
 	.container {
 		max-width: 900px;
 		padding: 0;
@@ -44,6 +62,8 @@
 	}
 
 	main {
+		position: relative;
+		z-index: 1;
 		max-width: 100%;
 		min-height: 500px;
 		text-align: left;

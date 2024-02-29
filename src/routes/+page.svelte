@@ -4,68 +4,80 @@
 	import FaEnvelope from 'svelte-icons/fa/FaEnvelope.svelte';
 	import FaMedium from 'svelte-icons/fa/FaMedium.svelte';
 	import { modalOpened } from '$lib/store';
+
+	if (typeof window !== 'undefined') {
+		particlesJS.load('particles-js', 'assets/particles.json', function () {
+			console.log('callback - particles.js config loaded');
+		});
+	}
 </script>
 
+<div id="particles-js" />
+
 <svelte:head>
-	<title>Gianmarco Cavallo - Main page</title>
+	<title>Satwik Misra - Main</title>
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" async></script>
 </svelte:head>
 <main>
-	<h1>Hi!✋ <br /> I'm Gianmarco a Front-End Developer 💻 based in Italy</h1>
-	<div class="icons">
-		<div
-			role="button"
-			tabindex="0"
-			on:keypress={() => {
-				modalOpened.set(true);
-			}}
-			on:click={() => {
-				modalOpened.set(true);
-			}}
-		>
-			<div class="icon">
-				<FaEnvelope />
+	<div>
+		<h1 id="header">Hi! ✋ <br /> I'm Satwik Misra, Student and Software Developer 💻</h1>
+		<div class="icons">
+			<div
+				role="button"
+				tabindex="0"
+				on:keypress={() => {
+					modalOpened.set(true);
+				}}
+				on:click={() => {
+					modalOpened.set(true);
+				}}
+			>
+				<div class="icon">
+					<FaEnvelope />
+				</div>
 			</div>
-		</div>
 
-		<a
-			href="https://github.com/Ladvace"
-			aria-label="GitHub"
-			target="_blank"
-			rel="noopener noreferrer"
-		>
-			<div class="icon">
-				<FaGithub />
-			</div>
-		</a>
-		<a
-			href="https://www.linkedin.com/in/ladvace/"
-			aria-label="Linkedin"
-			target="_blank"
-			rel="noopener noreferrer"
-		>
-			<div class="icon">
-				<FaLinkedin />
-			</div>
-		</a>
-		<a
-			href="https://medium.com/@ladvace"
-			aria-label="Medium"
-			target="_blank"
-			rel="noopener noreferrer"
-		>
-			<div class="icon">
-				<FaMedium />
-			</div>
-		</a>
+			<a
+				href="https://github.com/satm-24"
+				aria-label="GitHub"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<div class="icon">
+					<FaGithub />
+				</div>
+			</a>
+			<a
+				href="https://www.linkedin.com/in/satwik-misra/"
+				aria-label="Linkedin"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<div class="icon">
+					<FaLinkedin />
+				</div>
+			</a>
+		</div>
 	</div>
 </main>
 
 <style>
+	#particles-js {
+		position: fixed; /* or 'absolute' if you prefer */
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		z-index: 0; /* Ensure this is behind all other content */
+	}
+
 	a {
 		color: white;
 		text-decoration: none;
 	}
 	main {
+		position: relative;
+		z-index: 1;
 		text-align: center;
 		padding: 0;
 		margin: 0 auto;
