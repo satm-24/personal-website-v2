@@ -39,14 +39,16 @@
 							</div>
 						</div>
 					</div>
-					{#if Gif}
-						<img src={Gif} alt={project.title + ' GIF'} class="project-gif" />
-					{/if}
+					<div class="gifContainer">
+						{#if project.preview}
+							<img src={project.preview} alt={project.title + ' GIF'} class="project-gif" />
+						{/if}
+					</div>
 					<p>
 						{project.description}
 					</p>
 					<a href={project.url} target="_blank" rel="noreferrer">
-						<div class="button">Project url =></div>
+						<div class="button">github</div>
 					</a>
 				</div>
 			{/each}
@@ -160,6 +162,13 @@
 		color: white;
 		border: 2px solid white;
 		padding: 10px;
+		opacity: 0.7;
+		transition: opacity 0.3s ease-in-out;
+	}
+
+	.button:hover {
+		background-color: #cccccc;
+		opacity: 1;
 	}
 
 	@media (min-width: 900px) {

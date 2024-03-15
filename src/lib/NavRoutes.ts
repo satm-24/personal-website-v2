@@ -12,8 +12,8 @@ const routes = [
 		label: 'About'
 	},
 	{
-		href: '/blog',
-		label: 'Blog'
+		href: '/resume',
+		label: 'Resume'
 	}
 ];
 

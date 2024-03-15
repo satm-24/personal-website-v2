@@ -20,7 +20,9 @@
 </svelte:head>
 <main>
 	<div>
-		<h1 id="header">Hi! ✋ <br /> I'm Satwik Misra, Student and Software Developer 💻</h1>
+		<h1 id="header">
+			Howdy! 🤠<br /> I'm Satwik Misra, a Software Engineer and Computer Science Student 💻
+		</h1>
 		<div class="icons">
 			<div
 				role="button"

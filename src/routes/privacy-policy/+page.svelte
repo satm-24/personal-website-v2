@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Gianmarco Cavallo - Privacy policy</title>
+	<title>Satwik Misra - Privacy policy</title>
 </svelte:head>
 
 <div class="container">
@@ -42,7 +42,7 @@
 			<li>
 				<p>
 					<strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot;
-					or &quot;Our&quot; in this Agreement) refers to Gianmarco Cavallo.
+					or &quot;Our&quot; in this Agreement) refers to Satwik Misra.
 				</p>
 			</li>
 			<li>
@@ -87,8 +87,8 @@
 			</li>
 			<li>
 				<p>
-					<strong>Website</strong> refers to Gianmarco Cavallo, accessible from
-					<a href="gianmarco.xyz" rel="external nofollow noopener" target="_blank">gianmarco.xyz</a>
+					<strong>Website</strong> refers to Satwik Misra, accessible from
+					<a href="" rel="external nofollow noopener" target="_blank" />
 				</p>
 			</li>
 			<li>

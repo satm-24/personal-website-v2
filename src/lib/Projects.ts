@@ -1,23 +1,37 @@
+import Gif from '$lib/assets/testGif.gif';
+
 const projects = [
 	{
-		title: 'GDLauncher',
-		technologies: ['Node', 'React', 'Redux', 'Electron'],
+		title: 'Financial Education Discord Bot',
+		technologies: ['Node.js |', 'MongoDB |', 'TypeScript'],
+		preview: Gif,
 		description:
-			'GDLauncher is a simple, yet powerful Minecraft custom launcher with a strong focus on the user experience',
-		url: 'https://github.com/gorilla-devs/GDLauncher'
+			'The is a quiz bot that allows users to quiz themselves on basic financial concepts and earn points for solving questions correctly. Keep track of your financial knowledge and compete with your friends on the leaderboard!',
+		url: 'https://github.com/satm-24/Financial-Education-Discord-Bot'
 	},
 	{
-		title: 'WiseMan Discord Bot',
-		technologies: ['NodeJs', 'FireBase', 'MongoDb', 'golang'],
+		title: 'Cryptocurrency Price Tracker',
+		technologies: ['React'],
+		preview: Gif,
 		description:
-			'The wiseMan bot allows you to level up based on the time you spend in a vocal channel',
-		url: 'https://github.com/Ladvace/WiseMan-DiscordBot'
+			'A simple cryptocurrency price tracker making use of the CoinGecko API to fetch the latest prices of almost all cryptocurrencies.',
+		url: 'https://github.com/satm-24/crypto-tracker'
 	},
 	{
-		title: 'Easy-react-carousel',
-		technologies: ['React', 'NodeJs'],
-		description: 'A simple carousel made in reactjs',
-		url: 'https://github.com/Ladvace/easy-react-carousel'
+		title: 'Image Processing Software',
+		technologies: ['Java |', 'Swing GUI'],
+		preview: Gif,
+		description:
+			'A simple image processing software that allows users to generate images and apply various filters (sharpening, blurring) and color transformations (sepia, greyscale, custom matrix) to them.',
+		url: 'https://github.com/satm-24/Image-Manipulator'
+	},
+	{
+		title: 'Maze Solving with Algorithms',
+		technologies: ['Java'],
+		preview: Gif,
+		description:
+			'This is a simple maze solving application that uses various algorithms, such as Depth First Search (DFS) and Breadth First Search (BFS) to solve randomly generated mazes.',
+		url: 'https://github.com/satm-24/Maze-Solver'
 	}
 ];
 
