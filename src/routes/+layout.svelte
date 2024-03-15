@@ -121,13 +121,24 @@
 <slot />
 
 <footer>
-	Created by <a class="me" href="/about">Ladvace</a> ❤️ with
-	<span class="svelte">Svelte</span>
+	<!-- Created by <a class="me" href="/about">Ladvace</a> ❤️ with
+	<span class="svelte">Svelte</span> -->
+	<!--  -->
+	<div class="outer">Satwik Misra © 2024</div>
 </footer>
 
 <style>
 	* {
 		box-sizing: border-box;
+	}
+
+	.icon {
+		cursor: pointer;
+		transition: color 0.2s ease-in-out;
+		width: 40px;
+	}
+	.icon:hover {
+		color: #ca3c25;
 	}
 
 	@font-face {

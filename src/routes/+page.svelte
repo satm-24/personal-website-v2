@@ -15,7 +15,7 @@
 <div id="particles-js" />
 
 <svelte:head>
-	<title>Satwik Misra - Main</title>
+	<title>Home</title>
 	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" async></script>
 </svelte:head>
 <main>
@@ -63,12 +63,12 @@
 
 <style>
 	#particles-js {
-		position: fixed; /* or 'absolute' if you prefer */
+		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100vw;
 		height: 100vh;
-		z-index: 0; /* Ensure this is behind all other content */
+		z-index: 0;
 	}
 
 	a {

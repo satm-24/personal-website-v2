@@ -1,5 +1,6 @@
 <script>
 	import projects from '$lib/Projects';
+	import Gif from '$lib/assets/testGif.gif';
 
 	if (typeof window !== 'undefined') {
 		particlesJS.load('particles-js', 'assets/particles.json', function () {
@@ -11,7 +12,7 @@
 <div id="particles-js" />
 
 <svelte:head>
-	<title>Gianmarco Cavallo — Projects</title>
+	<title>Projects</title>
 	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" async></script>
 </svelte:head>
 
@@ -20,8 +21,8 @@
 		<div class="projects">
 			<h1>Projects</h1>
 			<p class="note">
-				Note: most of my projects are under NDA so I am unable to share those projects. If there is
-				anything you would like to see further, please feel free to contact me.
+				Note: Some of the GitHub repositories for these projects are private. If there are any
+				further questions, please contact me for access.
 			</p>
 			{#each projects as project}
 				<div class="project">
@@ -38,6 +39,9 @@
 							</div>
 						</div>
 					</div>
+					{#if Gif}
+						<img src={Gif} alt={project.title + ' GIF'} class="project-gif" />
+					{/if}
 					<p>
 						{project.description}
 					</p>
@@ -52,12 +56,18 @@
 
 <style>
 	#particles-js {
-		position: fixed; /* or 'absolute' if you prefer */
+		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100vw;
 		height: 100vh;
-		z-index: 0; /* Ensure this is behind all other content */
+		z-index: 0;
+		pointer-events: none;
+	}
+
+	.project-gif {
+		width: auto;
+		height: auto;
 	}
 
 	.projectContainer {

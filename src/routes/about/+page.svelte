@@ -11,7 +11,7 @@
 <div id="particles-js" />
 
 <svelte:head>
-	<title>Gianmarco Cavallo — About</title>
+	<title>Satwik Misra — About</title>
 	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" async></script>
 </svelte:head>
 
@@ -19,10 +19,13 @@
 	<main>
 		<h1>About</h1>
 		<p>
-			I'm a Software developer with over 2 years of front-end development experience, experienced in
-			both enterprise and open-source software development. I'm based in Italy and currently working
-			as a freelancer and coding in Node.js, React.js (and other web technologies) and Go(lang), but
-			I tend to learn and use the best technology and approach to best solve the problem I'm facing.
+			Hi, I'm Satwik! I'm a Software Developer with over one year of internship experience in
+			full-stack development with a focus on the back end. I'm currently a senior at Northeastern
+			majoing in Computer Science with a concentration in Artifical Intelligence. Though I've always
+			been interested in computers. I'm based in Boston, Massachusetts and currently working as a
+			freelancer and coding in Node.js, React.js (and other web technologies) and Go(lang), but
+			Making this website in svelte was a great experience and I'm always open to learning new
+			technologies and a good challenge!
 		</p>
 		<h2>Skills</h2>
 		{#each Object.entries(skills) as [section, technologies]}
@@ -46,12 +49,12 @@
 
 <style>
 	#particles-js {
-		position: fixed; /* or 'absolute' if you prefer */
+		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100vw;
 		height: 100vh;
-		z-index: 0; /* Ensure this is behind all other content */
+		z-index: 0;
 	}
 
 	.container {

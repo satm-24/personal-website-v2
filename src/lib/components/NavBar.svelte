@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Burger from './Hamburger.svelte';
-	import Logo from '$lib/assets/logo.svg';
+	import Logo from '$lib/assets/pwLogoWhite.png';
 	import routes from '$lib/NavRoutes';
 	let opened = false;
 	export let segment: string;
@@ -34,8 +34,9 @@
 <style>
 	:global(.logo) {
 		cursor: pointer;
-		height: 30px;
-		width: 30px;
+		height: 70px;
+		width: 60px;
+		margin-top: -13px;
 	}
 
 	.open {
