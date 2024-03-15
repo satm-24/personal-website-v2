@@ -15,7 +15,7 @@
 
 <main>
 	<!-- svelte-ignore a11y-missing-attribute -->
-	<iframe id="resume-pdf" src="src/lib/assets/Satwik_Misra_Resume.pdf" frameBorder="0" />
+	<iframe id="resume-pdf" src="/Satwik_Misra_Resume.pdf" frameBorder="0" />
 </main>
 
 <style>
