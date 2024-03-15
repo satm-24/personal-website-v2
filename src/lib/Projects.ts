@@ -1,4 +1,4 @@
-const pathStart = 'src/lib/projectImages/';
+const pathStart = '/projectImages/';
 const projects = [
 	{
 		title: 'Financial Education Discord Bot',
@@ -13,7 +13,7 @@ const projects = [
 		technologies: ['React'],
 		preview: pathStart + 'crypto.jpg',
 		description:
-			'A simple cryptocurrency price tracker making use of the CoinGecko API to fetch the latest prices of almost all cryptocurrencies.',
+			'A simple cryptocurrency price tracker making use of the CoinGecko API to fetch price and market data for various cryptocurrencies.',
 		url: 'https://github.com/satm-24/crypto-tracker'
 	},
 	{

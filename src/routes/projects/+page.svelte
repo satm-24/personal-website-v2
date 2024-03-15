@@ -69,6 +69,7 @@
 	.project-img {
 		width: 75%;
 		height: auto;
+		align-items: center;
 	}
 
 	.projectContainer {
@@ -152,6 +153,12 @@
 	}
 	.techs > div {
 		margin: 0 0 0 10px;
+	}
+
+	.gifContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.button {
