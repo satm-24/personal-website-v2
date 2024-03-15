@@ -19,13 +19,29 @@
 	<main>
 		<h1>About</h1>
 		<p>
-			Hi, I'm Satwik! I'm a Software Developer with over one year of internship experience in
-			full-stack development with a focus on the back end. I'm currently a senior at Northeastern
-			majoing in Computer Science with a concentration in Artifical Intelligence. Though I've always
-			been interested in computers. I'm based in Boston, Massachusetts and currently working as a
-			freelancer and coding in Node.js, React.js (and other web technologies) and Go(lang), but
-			Making this website in svelte was a great experience and I'm always open to learning new
-			technologies and a good challenge!
+			Hi, I'm Satwik! I'm a Software Developer based in Boston, Massachusetts, with over one year of
+			internship experience in full-stack development, focusing on the back end. I'm currently a
+			senior at Northeastern, majoring in Computer Science with a concentration in Artificial
+			Intelligence. I am very interested in the financial realm, especially in using software to
+			make financial education more accessible. Working on this website and tinkering with Svelte
+			was a lot of fun, and I'm always open to new technologies and challenges.
+
+			<br />
+			<br />
+
+			When I'm not coding, I have a bunch of other interests that keep me busy. I love sports and
+			played baseball throughout most of my childhood. As a true Bostonian, I'm a big fan of the
+			Patriots, Sox, and Celtics. Traveling is also something I'm very enthusiastic about. I wasn't
+			born in the states and moved around a lot as a kid, but I don't remember many of the places I
+			went to. I plan to eventually visit all 7 continents (including Antarctica!). Language
+			learning is another hobby I've picked up, and I'm currently learning French and improving my
+			Hindi. Making and listening to music (particularly hip-hop/rnb) has always been a big part of
+			my life as well. If any of these things interest you as well, let's connect 😁
+
+			<br />
+			<br />
+
+			Feel free to reach out to me if you have any questions or just want to chat!
 		</p>
 		<h2>Skills</h2>
 		{#each Object.entries(skills) as [section, technologies]}

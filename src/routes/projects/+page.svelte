@@ -41,7 +41,7 @@
 					</div>
 					<div class="gifContainer">
 						{#if project.preview}
-							<img src={project.preview} alt={project.title + ' GIF'} class="project-gif" />
+							<img src={project.preview} alt={project.title + ' GIF'} class="project-img" />
 						{/if}
 					</div>
 					<p>
@@ -67,8 +67,8 @@
 		pointer-events: none;
 	}
 
-	.project-gif {
-		width: auto;
+	.project-img {
+		width: 75%;
 		height: auto;
 	}
 

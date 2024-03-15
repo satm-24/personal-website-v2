@@ -36,7 +36,7 @@
 		cursor: pointer;
 		height: 70px;
 		width: 60px;
-		margin-top: -13px;
+		margin-top: -16px;
 	}
 
 	.open {
