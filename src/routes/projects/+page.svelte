@@ -1,6 +1,5 @@
 <script>
 	import projects from '$lib/Projects';
-	import Gif from '$lib/assets/testGif.gif';
 
 	if (typeof window !== 'undefined') {
 		particlesJS.load('particles-js', 'assets/particles.json', function () {
