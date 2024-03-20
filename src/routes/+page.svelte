@@ -21,7 +21,12 @@
 <main>
 	<div>
 		<h1 id="header">
-			Howdy! 🤠<br /> I'm Satwik Misra, a Software Engineer and Computer Science Student 💻
+			<div class="typewriter">
+				<h3>
+					<span id="print">print</span>(<span id="greeting">"Hi! I'm Satwik Misra"</span>)
+				</h3>
+			</div>
+			Software Engineer and Computer Science Student
 		</h1>
 		<div class="icons">
 			<div
@@ -71,6 +76,46 @@
 		width: 100vw;
 		height: 100vh;
 		z-index: 0;
+	}
+
+	.typewriter h3 {
+		overflow: hidden;
+		border-right: 0.15em solid #ca3c25;
+		white-space: nowrap;
+		margin: 0 auto;
+		letter-spacing: 0.15em;
+		animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+	}
+
+	@keyframes typing {
+		from {
+			width: 0;
+		}
+		to {
+			width: 100%;
+		}
+	}
+
+	@keyframes blink-caret {
+		from,
+		to {
+			border-color: transparent;
+		}
+		50% {
+			border-color: #ca3c25;
+		}
+	}
+
+	span {
+		padding: 0px;
+	}
+
+	#print {
+		color: #49d5f5;
+	}
+
+	#greeting {
+		color: #f2ee6d;
 	}
 
 	a {

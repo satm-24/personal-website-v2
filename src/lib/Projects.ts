@@ -2,7 +2,7 @@ const pathStart = '/projectImages/';
 const projects = [
 	{
 		title: 'Financial Education Discord Bot',
-		technologies: ['Node.js |', 'MongoDB |', 'TypeScript'],
+		technologies: ['Node.js', 'MongoDB', 'TypeScript'],
 		// preview: pathStart + 'imageprocess-speed.gif',
 		description:
 			'The is a quiz bot that allows users to quiz themselves on basic financial concepts and earn points for solving questions correctly. Keep track of your financial knowledge and compete with your friends on the leaderboard!',
@@ -18,7 +18,7 @@ const projects = [
 	},
 	{
 		title: 'Image Processing Software',
-		technologies: ['Java |', 'Swing GUI'],
+		technologies: ['Java', 'Swing GUI'],
 		preview: pathStart + 'imageprocess-speed.gif',
 		description:
 			'A simple image processing software that allows users to generate images and apply various filters (sharpening, blurring) and color transformations (sepia, greyscale, custom matrix) to them.',
