@@ -18,7 +18,7 @@
 <div class="container">
 	<main>
 		<h1>About</h1>
-		<p class="desc">
+		<p>
 			Hi, I'm Satwik! I'm a Software Developer based in Boston, Massachusetts, with over one year of
 			internship experience in full-stack development, focusing on the back end. I'm currently a
 			senior at Northeastern, majoring in Computer Science with a concentration in Artificial
@@ -73,14 +73,13 @@
 		z-index: 0;
 	}
 
-	.desc {
-	}
-
 	.container {
 		max-width: 900px;
 		padding: 0;
 		display: flex;
 		justify-content: center;
+		text-align: justify;
+		padding: 0 30px;
 	}
 
 	main {
