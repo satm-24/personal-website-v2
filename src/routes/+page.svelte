@@ -26,7 +26,7 @@
 					<span id="print">print</span>(<span id="greeting">"Hi! I'm Satwik Misra"</span>)
 				</h3>
 			</div>
-			Software Engineer and Computer Science Student
+			Software Engineer and Product Manager
 		</h1>
 		<div class="icons">
 			<div
