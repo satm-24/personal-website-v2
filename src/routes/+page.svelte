@@ -26,7 +26,7 @@
 					<span id="print">print</span>(<span id="greeting">"Hi! I'm Satwik Misra"</span>)
 				</h3>
 			</div>
-			Software Engineer and Product Manager
+			<p class="subtitle">Technical Product Manager @ Cognex Corp</p>
 		</h1>
 		<div class="icons">
 			<div
@@ -69,25 +69,35 @@
 </main>
 
 <style>
-        #particles-js {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100vw;
-                height: 100vh;
-                z-index: 0;
-                pointer-events: none;
-        }
+	#particles-js {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		z-index: 0;
+		pointer-events: none;
+	}
 
-        .typewriter h3 {
-                overflow: hidden;
-                border-right: 0.15em solid #ca3c25;
-                white-space: nowrap;
-                margin: 0 auto;
-                letter-spacing: 0.15em;
-                animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
-                max-width: 100%;
-        }
+	.typewriter {
+		padding: 10px 14px;
+		border-radius: 12px;
+		background: rgba(0, 0, 0, 0.24);
+		border: 1px solid rgba(255, 255, 255, 0.06);
+	}
+
+	.typewriter h3 {
+		overflow: hidden;
+		border-right: 0.15em solid #ca3c25;
+		white-space: nowrap;
+		margin: 0 auto;
+		letter-spacing: 0.08em;
+		animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+		max-width: 100%;
+		font-size: clamp(16px, 3.5vw, 22px);
+		line-height: 1.5;
+		text-align: center;
+	}
 
 	@keyframes typing {
 		from {
@@ -124,29 +134,49 @@
 		color: white;
 		text-decoration: none;
 	}
-        main {
-                position: relative;
-                z-index: 1;
-                text-align: center;
-                padding: 0;
-                margin: 0 auto;
-                text-align: center;
+	main {
+		position: relative;
+		z-index: 1;
+		text-align: center;
+		margin: 0 auto;
+		text-align: center;
 
-                display: flex;
-                flex-direction: column;
-                min-height: calc(100vh - 80px - 88px);
-                justify-content: center;
-                align-items: center;
-                padding: 0 12px;
-        }
+		display: flex;
+		flex-direction: column;
+		min-height: calc(100vh - 80px - 88px);
+		justify-content: center;
+		align-items: center;
+		padding: 0 12px;
+	}
 
 	h1 {
 		font-weight: 700;
+		line-height: 1.3;
 	}
 
-	main > h1 {
-		margin: 50px 10px 0;
-		font-size: 36px;
+	#header {
+		margin: 60px auto 0;
+		font-size: clamp(28px, 6vw, 40px);
+		max-width: 800px;
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		align-items: center;
+		padding: 36px 32px;
+		border-radius: 18px;
+		background: rgba(0, 0, 0, 0.35);
+		border: 1px solid rgba(255, 255, 255, 0.08);
+		box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+	}
+
+	.subtitle {
+		margin: 0;
+		font-size: clamp(22px, 5vw, 32px);
+		color: #f7f7f7;
+		letter-spacing: 0.02em;
+		text-align: center;
+		line-height: 1.4;
+		max-width: 600px;
 	}
 
 	.icons {
@@ -159,7 +189,7 @@
 		display: flex;
 		justify-content: space-between;
 		max-width: 200px;
-		margin: 50px auto 0;
+		margin: 32px auto 0;
 	}
 
 	.icon {
@@ -172,33 +202,42 @@
 	}
 
 	@media (min-width: 900px) {
-		main > h1 {
+		#header {
 			font-size: 48px;
 		}
 	}
 
-        @media (min-width: 600px) {
-                main {
-                        max-width: none;
-                }
-        }
+	@media (min-width: 600px) {
+		main {
+			max-width: none;
+		}
+	}
 
-        @media (max-width: 600px) {
-                .typewriter h3 {
-                        white-space: normal;
-                        border-right: none;
-                        animation: none;
-                        letter-spacing: 0.05em;
-                        line-height: 1.4;
-                }
+	@media (max-width: 600px) {
+		.typewriter h3 {
+			white-space: normal;
+			border-right: none;
+			animation: none;
+			letter-spacing: 0.05em;
+			line-height: 1.4;
+			text-align: center;
+		}
 
-                main {
-                        padding: 0 20px;
-                        align-items: flex-start;
-                }
+		main {
+			padding: 0 20px 20px;
+			align-items: center;
+		}
 
-                #header {
-                        text-align: left;
-                }
-        }
+		#header {
+			text-align: center;
+			align-items: center;
+			padding: 28px 22px;
+			gap: 18px;
+		}
+
+		.subtitle {
+			text-align: center;
+			font-size: 21px;
+		}
+	}
 </style>

@@ -19,12 +19,16 @@
 	<main>
 		<h1>About</h1>
 		<p>
-			Hi, I'm Satwik! I'm a Software Developer based in Boston, Massachusetts, with over one year of
-			internship experience in full-stack development, focusing on the back end. I'm currently a
-			senior at Northeastern, majoring in Computer Science with a concentration in Artificial
-			Intelligence. I am very interested in the financial realm, especially in using software to
-			make financial education more accessible. Working on this website and tinkering with Svelte
-			was a lot of fun, and I'm always open to new technologies and challenges.
+			Hi, I'm Satwik! I'm a Technical Product Manager based in Cambridge, Massachusetts, with over
+			one year of internship experience in full-stack development, and another year of being a
+			full-time technical product manager at Cognex Corporation. I graduated summa cum laude from
+			Northeastern, majoring in Computer Science with a concentration in Artificial Intelligence. I
+			am very interested in the financial realm, especially in using software to make financial
+			education more accessible. As I've transitioned to product, my interest has also grown into
+			scaling technology create more fluid hardware and software experiences across devices,
+			particulaly with machine vision cameras and sensors that I work with every day at Cognex. I'm
+			passionate about Working on this website and tinkering with Svelte was a lot of fun, and I'm
+			always open to new technologies and challenges.
 
 			<br />
 			<br />

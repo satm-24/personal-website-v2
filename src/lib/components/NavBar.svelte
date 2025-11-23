@@ -1,9 +1,14 @@
 <script lang="ts">
-	import Burger from './Hamburger.svelte';
-	import Logo from '$lib/assets/pwLogoWhite.png';
-	import routes from '$lib/NavRoutes';
-	let opened = false;
-	export let segment: string;
+        import { afterNavigate } from '$app/navigation';
+        import Burger from './Hamburger.svelte';
+        import Logo from '$lib/assets/pwLogoWhite.png';
+        import routes from '$lib/NavRoutes';
+        let opened = false;
+        export let segment: string;
+
+        afterNavigate(() => {
+                opened = false;
+        });
 </script>
 
 <div class={opened ? 'NavBar open' : 'NavBar'}>
@@ -16,19 +21,25 @@
 		</div>
 		<div class="buttons">
 			{#each routes as route}
-				<a class={`button ${segment === route.href ? 'selected' : ''}`} href={route.href}
-					>{route.label}</a
-				>
-			{/each}
-		</div>
+                        <a
+                                class={`button ${segment === route.href ? 'selected' : ''}`}
+                                href={route.href}
+                                on:click={() => (opened = false)}
+                                >{route.label}</a
+                        >
+                {/each}
+        </div>
 	</div>
 	<div class="responsiveButtons buttons">
-		{#each routes as route}
-			<a class={`button ${segment === route.href ? 'selected' : ''}`} href={route.href}
-				>{route.label}</a
-			>
-		{/each}
-	</div>
+                {#each routes as route}
+                        <a
+                                class={`button ${segment === route.href ? 'selected' : ''}`}
+                                href={route.href}
+                                on:click={() => (opened = false)}
+                                >{route.label}</a
+                        >
+                {/each}
+        </div>
 </div>
 
 <style>
