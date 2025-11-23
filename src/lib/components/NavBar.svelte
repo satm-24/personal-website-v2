@@ -85,20 +85,23 @@
 		color: white;
 	}
 
-	.NavBar {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-		width: 100%;
-		max-width: 900px;
-		box-sizing: border-box;
-		padding: 20px;
-		height: 80px;
-		overflow: hidden;
-		transition: height 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-		z-index: 2;
-	}
+        .NavBar {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                max-width: 900px;
+                box-sizing: border-box;
+                padding: 20px;
+                height: 80px;
+                overflow: hidden;
+                transition: height 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+                z-index: 10;
+                position: sticky;
+                top: 0;
+                background: var(--background);
+        }
 
 	.buttons {
 		display: none;

@@ -3,13 +3,11 @@
 	import Button from '$lib/components/Button.svelte';
 	import FaCopy from 'svelte-icons/fa/FaCopy.svelte';
 	import Tooltip from '$lib/components/Tooltip.svelte';
-	// import { beforeNavigate } from '$app/navigation';
 	import { page } from '$app/stores';
 	import Modal from '$lib/components/Modal.svelte';
 	import { onMount } from 'svelte';
 	import { customBackground } from '$lib/store';
 	import { Email } from '$lib/Constants';
-	// import routes from '$lib/NavRoutes';
 
 	let copied = false;
 	const cookieEnabled = false;
@@ -47,14 +45,6 @@
 		if (showCookie !== null) showCookieModal = JSON.parse(showCookie);
 		else showCookieModal = true;
 	});
-
-	// beforeNavigate(({ to }) => {
-	// 	const pathName = to.pathname;
-	// 	const route = routes.find((route) => pathName === route.href);
-	// 	if (!route.customColor) {
-	// 		customBackground.set('#0a0908');
-	// 	} else customBackground.set(route.customColor);
-	// });
 </script>
 
 <svelte:body use:cssVariables={{ background: $customBackground }} />
@@ -123,7 +113,7 @@
 <footer>
 	<!-- Created by <a class="me" href="/about">Satwik Misra</a> with
 	<span class="svelte">Svelte</span> -->
-	<div class="outer">Satwik Misra © 2024</div>
+	<div class="outer">Satwik Misra © 2025</div>
 </footer>
 
 <style>
@@ -147,13 +137,14 @@
 	}
 
 	:global(#svelte) {
-		width: 100vw;
-		height: 100%;
+		width: 100%;
+		min-height: 100vh;
 		max-width: 900px;
 
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		padding: 0 16px;
 	}
 
 	:global(html),
@@ -176,7 +167,7 @@
 		display: grid;
 		line-height: 1.75;
 		place-items: center;
-		height: 100%;
+		min-height: 100vh;
 		overflow-x: hidden;
 	}
 

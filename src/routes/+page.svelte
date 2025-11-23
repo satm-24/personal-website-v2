@@ -69,23 +69,25 @@
 </main>
 
 <style>
-	#particles-js {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		height: 100vh;
-		z-index: 0;
-	}
+        #particles-js {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                z-index: 0;
+                pointer-events: none;
+        }
 
-	.typewriter h3 {
-		overflow: hidden;
-		border-right: 0.15em solid #ca3c25;
-		white-space: nowrap;
-		margin: 0 auto;
-		letter-spacing: 0.15em;
-		animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
-	}
+        .typewriter h3 {
+                overflow: hidden;
+                border-right: 0.15em solid #ca3c25;
+                white-space: nowrap;
+                margin: 0 auto;
+                letter-spacing: 0.15em;
+                animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+                max-width: 100%;
+        }
 
 	@keyframes typing {
 		from {
@@ -122,20 +124,21 @@
 		color: white;
 		text-decoration: none;
 	}
-	main {
-		position: relative;
-		z-index: 1;
-		text-align: center;
-		padding: 0;
-		margin: 0 auto;
-		text-align: center;
+        main {
+                position: relative;
+                z-index: 1;
+                text-align: center;
+                padding: 0;
+                margin: 0 auto;
+                text-align: center;
 
-		display: flex;
-		flex-direction: column;
-		height: calc(100vh - 80px - 88px);
-		justify-content: center;
-		align-items: center;
-	}
+                display: flex;
+                flex-direction: column;
+                min-height: calc(100vh - 80px - 88px);
+                justify-content: center;
+                align-items: center;
+                padding: 0 12px;
+        }
 
 	h1 {
 		font-weight: 700;
@@ -174,9 +177,28 @@
 		}
 	}
 
-	@media (min-width: 600px) {
-		main {
-			max-width: none;
-		}
-	}
+        @media (min-width: 600px) {
+                main {
+                        max-width: none;
+                }
+        }
+
+        @media (max-width: 600px) {
+                .typewriter h3 {
+                        white-space: normal;
+                        border-right: none;
+                        animation: none;
+                        letter-spacing: 0.05em;
+                        line-height: 1.4;
+                }
+
+                main {
+                        padding: 0 20px;
+                        align-items: flex-start;
+                }
+
+                #header {
+                        text-align: left;
+                }
+        }
 </style>
