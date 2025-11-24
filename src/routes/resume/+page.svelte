@@ -8,20 +8,19 @@
 
 <div id="particles-js" />
 
-<svelte:head>
-	<title>Resume</title>
-	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" async></script>
-</svelte:head>
-
-<main>
-	<!-- svelte-ignore a11y-missing-attribute -->
-	<iframe id="resume-pdf" src="/Satwik_Misra_Resume.pdf" frameBorder="0" />
-</main>
+<h2 id="contact">
+	Contact <a href="mailto:satwikm24@gmail.com" id="email">satwikm24@gmail.com</a>
+	for up-to-date resume.
+</h2>
 
 <style>
-	#resume-pdf {
+	#contact {
 		width: 100%;
-		height: 1150px;
+		text-align: center;
+	}
+
+	#email {
+		color: aqua;
 	}
 
 	#particles-js {

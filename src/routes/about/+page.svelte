@@ -1,11 +1,14 @@
 <script>
+	import { onMount } from 'svelte';
 	import skills from '$lib/Skills';
 
-	if (typeof window !== 'undefined') {
+	onMount(() => {
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+
 		particlesJS.load('particles-js', 'assets/particles.json', function () {
 			console.log('callback - particles.js config loaded');
 		});
-	}
+	});
 </script>
 
 <div id="particles-js" />
@@ -22,25 +25,26 @@
 			Hi, I'm Satwik! I'm a Technical Product Manager based in Cambridge, Massachusetts, with over
 			one year of internship experience in full-stack development, and another year of being a
 			full-time technical product manager at Cognex Corporation. I graduated summa cum laude from
-			Northeastern, majoring in Computer Science with a concentration in Artificial Intelligence. I
-			am very interested in the financial realm, especially in using software to make financial
-			education more accessible. As I've transitioned to product, my interest has also grown into
-			scaling technology create more fluid hardware and software experiences across devices,
-			particulaly with machine vision cameras and sensors that I work with every day at Cognex. I'm
-			passionate about Working on this website and tinkering with Svelte was a lot of fun, and I'm
-			always open to new technologies and challenges.
+			Northeastern in 2024, majoring in Computer Science with a concentration in Artificial
+			Intelligence. I am very interested in the financial realm, especially regarding using software
+			to make financial education more accessible. As I've transitioned to product, my interest has
+			also grown into bridging together my love of finance, data, and tech to understand customer
+			needs in the field, analyze viability, and work on deplyoing new tools and solutions in the
+			machine vision space as well as improving existing ones.
 
 			<br />
 			<br />
 
-			When I'm not coding, I have a bunch of other interests that keep me busy. I love sports and
+			When I'm not working, I have a bunch of other interests that keep me busy. I love sports and
 			played baseball throughout most of my childhood. As a true Bostonian, I'm a big fan of the
-			Patriots, Sox, and Celtics. Traveling is also something I'm very enthusiastic about. I wasn't
-			born in the states and moved around a lot as a kid, but I don't remember many of the places I
-			went to. I plan to eventually visit all 7 continents (including Antarctica!). Language
-			learning is another hobby I've picked up, and I'm currently learning French and improving my
-			Hindi. Making and listening to music (particularly hip-hop/rnb) has always been a big part of
-			my life as well. If any of these things interest you as well, let's connect 😁
+			Patriots, Sox, and Celtics. I'm currently getting back into the electric guitar, and will one
+			day reach my goal of shredding like Prince. Traveling is also something I'm very enthusiastic
+			about, as I love to have the opportunity to learn about customs around the world and
+			understand cultures from a historical persepctive. I've been to only 12 countries so far, but
+			I plan to eventually visit all 7 continents (including Antarctica!). Language learning is
+			another hobby I've picked up, and I'm currently learning French and improving my Hindi. Making
+			and listening to music (particularly hip-hop/rnb) has always been a big part of my life as
+			well. If any of these things interest you as well, let's connect 😁
 
 			<br />
 			<br />
