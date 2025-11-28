@@ -1,3 +1,4 @@
+<!-- @migration-task Error while migrating Svelte code: structuredClone is not defined -->
 <script>
 	import FaLinkedin from 'svelte-icons/fa/FaLinkedin.svelte';
 	import FaGithub from 'svelte-icons/fa/FaGithub.svelte';

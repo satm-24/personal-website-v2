@@ -1,3 +1,4 @@
+<!-- @migration-task Error while migrating Svelte code: structuredClone is not defined -->
 <div class="container">
 	<h1>404</h1>
 </div>

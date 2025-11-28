@@ -1,3 +1,4 @@
+<!-- @migration-task Error while migrating Svelte code: structuredClone is not defined -->
 <script lang="ts">
 	import { afterNavigate } from '$app/navigation';
 	import Burger from './Hamburger.svelte';

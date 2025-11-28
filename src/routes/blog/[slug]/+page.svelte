@@ -1,3 +1,4 @@
+<!-- @migration-task Error while migrating Svelte code: structuredClone is not defined -->
 <script lang="ts">
 	import FaExternalLinkAlt from 'svelte-icons/fa/FaExternalLinkAlt.svelte';
 	import type { Article, PageData } from './types.js';

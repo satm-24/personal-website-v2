@@ -1,3 +1,4 @@
+<!-- @migration-task Error while migrating Svelte code: structuredClone is not defined -->
 <script>
 	export let data;
 	let devToArticles = data.devToArticles;

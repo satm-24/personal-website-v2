@@ -1,3 +1,4 @@
+<!-- @migration-task Error while migrating Svelte code: structuredClone is not defined -->
 <script>
 	if (typeof window !== 'undefined') {
 		particlesJS.load('particles-js', 'assets/particles.json', function () {});

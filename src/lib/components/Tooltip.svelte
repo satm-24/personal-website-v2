@@ -1,3 +1,4 @@
+<!-- @migration-task Error while migrating Svelte code: structuredClone is not defined -->
 <script lang="ts">
 	export let tooltip: string;
 </script>

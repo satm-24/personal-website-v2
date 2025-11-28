@@ -1,3 +1,4 @@
+<!-- @migration-task Error while migrating Svelte code: structuredClone is not defined -->
 <script>
 	import { goto } from '$app/navigation';
 	import { Email } from '$lib/Constants';

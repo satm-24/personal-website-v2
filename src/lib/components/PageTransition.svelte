@@ -1,3 +1,4 @@
+<!-- @migration-task Error while migrating Svelte code: structuredClone is not defined -->
 <script>
 	import { fly } from 'svelte/transition';
 	export let refresh = '';
