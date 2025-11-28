@@ -3,11 +3,7 @@
 	import skills from '$lib/Skills';
 
 	onMount(() => {
-		window.scrollTo({ top: 0, behavior: 'smooth' });
-
-		particlesJS.load('particles-js', 'assets/particles.json', function () {
-			console.log('callback - particles.js config loaded');
-		});
+		particlesJS.load('particles-js', 'assets/particles.json', function () {});
 	});
 </script>
 
@@ -21,16 +17,16 @@
 <div class="container">
 	<main>
 		<h1>About</h1>
-		<p>
+		<p class="text">
 			Hi, I'm Satwik! I'm a Technical Product Manager based in Cambridge, Massachusetts, with over
 			one year of internship experience in full-stack development, and another year of being a
-			full-time technical product manager at Cognex Corporation. I graduated summa cum laude from
-			Northeastern in 2024, majoring in Computer Science with a concentration in Artificial
-			Intelligence. I am very interested in the financial realm, especially regarding using software
-			to make financial education more accessible. As I've transitioned to product, my interest has
-			also grown into bridging together my love of finance, data, and tech to understand customer
-			needs in the field, analyze viability, and work on deplyoing new tools and solutions in the
-			machine vision space as well as improving existing ones.
+			full-time technical product manager at Cognex Corporation. I graduated from Northeastern in
+			2024, majoring in Computer Science with a concentration in Artificial Intelligence. I am very
+			interested in the financial realm, especially regarding using software to make financial
+			education more accessible. As I've transitioned to product, my interest has also grown into
+			bridging together my love of finance, data, and tech to understand customer needs in the
+			field, analyze viability, and work on deplyoing new tools and solutions in the machine vision
+			space as well as improving existing ones.
 
 			<br />
 			<br />
@@ -77,27 +73,32 @@
 		top: 0;
 		left: 0;
 		width: 100vw;
-		height: 100vh;
+		height: 100dvh;
 		z-index: 0;
+		pointer-events: none;
 	}
 
 	.container {
+		width: 100%;
 		max-width: 900px;
-		padding: 0;
-		display: flex;
-		justify-content: center;
-		text-align: justify;
-		padding: 0 30px;
+		margin: 0 auto;
+		box-sizing: border-box;
+		margin: 0 auto;
+		text-align: left;
+		/* padding: clamp(110px, 15vh, 200px) clamp(18px, 6vw, 36px) 80px; */
 	}
 
 	main {
 		position: relative;
 		z-index: 1;
-		max-width: 100%;
-		min-height: 500px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
 		text-align: left;
-		margin: 0 auto;
+		line-height: 1.7;
 		box-sizing: border-box;
+		margin: 0 auto;
 	}
 
 	h1 {
@@ -111,18 +112,25 @@
 		margin-top: 50px;
 	}
 
+	p {
+		margin: 0 10px 0;
+	}
+
 	.list {
 		display: flex;
 		flex-direction: column;
 		gap: 30px;
 	}
 
-	@media (min-width: 900px) {
-		.list {
-			flex-direction: row;
+	@media (max-width: 900px) {
+		.container {
+			padding: clamp(96px, 16vh, 150px) clamp(16px, 6vw, 28px) 60px;
 		}
-		main > h1 {
-			font-size: 48px;
+	}
+
+	@media (min-width: 350px) {
+		.text {
+			margin-left: 0px;
 		}
 	}
 </style>

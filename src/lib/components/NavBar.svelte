@@ -1,14 +1,14 @@
 <script lang="ts">
-        import { afterNavigate } from '$app/navigation';
-        import Burger from './Hamburger.svelte';
-        import Logo from '$lib/assets/pwLogoWhite.png';
-        import routes from '$lib/NavRoutes';
-        let opened = false;
-        export let segment: string;
+	import { afterNavigate } from '$app/navigation';
+	import Burger from './Hamburger.svelte';
+	import Logo from '$lib/assets/pwLogoWhite.png';
+	import routes from '$lib/NavRoutes';
+	let opened = false;
+	export let segment: string;
 
-        afterNavigate(() => {
-                opened = false;
-        });
+	afterNavigate(() => {
+		opened = false;
+	});
 </script>
 
 <div class={opened ? 'NavBar open' : 'NavBar'}>
@@ -21,25 +21,23 @@
 		</div>
 		<div class="buttons">
 			{#each routes as route}
-                        <a
-                                class={`button ${segment === route.href ? 'selected' : ''}`}
-                                href={route.href}
-                                on:click={() => (opened = false)}
-                                >{route.label}</a
-                        >
-                {/each}
-        </div>
+				<a
+					class={`button ${segment === route.href ? 'selected' : ''}`}
+					href={route.href}
+					on:click={() => (opened = false)}>{route.label}</a
+				>
+			{/each}
+		</div>
 	</div>
 	<div class="responsiveButtons buttons">
-                {#each routes as route}
-                        <a
-                                class={`button ${segment === route.href ? 'selected' : ''}`}
-                                href={route.href}
-                                on:click={() => (opened = false)}
-                                >{route.label}</a
-                        >
-                {/each}
-        </div>
+		{#each routes as route}
+			<a
+				class={`button ${segment === route.href ? 'selected' : ''}`}
+				href={route.href}
+				on:click={() => (opened = false)}>{route.label}</a
+			>
+		{/each}
+	</div>
 </div>
 
 <style>
@@ -87,8 +85,9 @@
 		justify-content: space-between;
 		align-items: center;
 		width: 100%;
-		max-width: 900px;
+		/* max-width: 900px; */
 		box-sizing: border-box;
+		background-color: transparent;
 	}
 
 	.innerContainer :global(a) {
@@ -96,23 +95,23 @@
 		color: white;
 	}
 
-        .NavBar {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-                width: 100%;
-                max-width: 900px;
-                box-sizing: border-box;
-                padding: 20px;
-                height: 80px;
-                overflow: hidden;
-                transition: height 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-                z-index: 10;
-                position: sticky;
-                top: 0;
-                background: var(--background);
-        }
+	.NavBar {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		max-width: 900px;
+		box-sizing: border-box;
+		padding: 20px;
+		height: 80px;
+		overflow: hidden;
+		transition: height 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+		z-index: 10;
+		position: sticky;
+		top: 0;
+		background: transparent;
+	}
 
 	.buttons {
 		display: none;

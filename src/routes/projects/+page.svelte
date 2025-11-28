@@ -2,9 +2,7 @@
 	import projects from '$lib/Projects';
 
 	if (typeof window !== 'undefined') {
-		particlesJS.load('particles-js', 'assets/particles.json', function () {
-			console.log('callback - particles.js config loaded');
-		});
+		particlesJS.load('particles-js', 'assets/particles.json', function () {});
 	}
 </script>
 
@@ -61,9 +59,19 @@
 		top: 0;
 		left: 0;
 		width: 100vw;
-		height: 100vh;
+		height: 100dvh;
 		z-index: 0;
 		pointer-events: none;
+	}
+
+	main {
+		position: relative;
+		z-index: 1;
+		width: 100%;
+		max-width: 900px;
+		padding: clamp(40px, 18vh, 40px) clamp(16px, 5vw, 28px);
+		box-sizing: border-box;
+		margin: 0 auto;
 	}
 
 	.project-img {
@@ -74,37 +82,34 @@
 
 	.projectContainer {
 		width: 100%;
-		max-width: 900px;
-		display: flex;
-		justify-content: center;
 		box-sizing: border-box;
-		text-align: center;
-		padding: 1em;
-		margin: 0 auto;
-		text-align: center;
+		margin: 0;
+		text-align: left;
 	}
 
 	.note {
-		opacity: 0.5;
-		margin: 0;
+		opacity: 0.6;
 		max-width: 900px;
-		text-align: left;
+		margin: clamp(14px, 2vw, 22px) 0 32px;
+		padding: 0 clamp(14px, 5vw, 22px);
 	}
 
 	a {
 		text-decoration: none;
 	}
 
-	.projectContainer .projects {
+	.projects {
+		width: 100%;
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-gap: 40px;
-		margin-top: 30px;
+		gap: 40px;
+		margin: 0;
 	}
 
 	h1 {
 		font-weight: 700;
 		text-align: start;
+		margin: 0 0 12px 0;
 	}
 
 	h2 {
@@ -129,15 +134,6 @@
 	.project p {
 		font-weight: 100;
 		color: #708090;
-	}
-
-	.projects {
-		width: 100%;
-		margin: 50px auto;
-		display: grid;
-		grid-gap: 1rem;
-		grid-template-columns: 1fr;
-		margin-bottom: 10px;
 	}
 
 	.techsContainer {
@@ -178,12 +174,9 @@
 	}
 
 	@media (min-width: 900px) {
-		.projectContainer {
-			padding: 0;
-		}
 		.projects > h1 {
 			font-size: 48px;
-			margin: 50px 0 0 0;
+			margin-bottom: 16px;
 		}
 
 		.projects {
@@ -198,9 +191,16 @@
 		}
 	}
 
-	@media (min-width: 600px) {
+	@media (min-width: 430px) {
 		.projects {
 			grid-template-columns: 1fr;
+			margin: 0px;
+		}
+	}
+
+	@media (max-width: 600px) {
+		.project {
+			padding: clamp(14px, 5vw, 20px);
 		}
 	}
 </style>

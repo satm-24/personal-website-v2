@@ -4,8 +4,9 @@
 	import FaCopy from 'svelte-icons/fa/FaCopy.svelte';
 	import Tooltip from '$lib/components/Tooltip.svelte';
 	import { page } from '$app/stores';
+	import { afterNavigate, beforeNavigate } from '$app/navigation';
 	import Modal from '$lib/components/Modal.svelte';
-	import { onMount } from 'svelte';
+	import { onMount, tick } from 'svelte';
 	import { customBackground } from '$lib/store';
 	import { Email } from '$lib/Constants';
 
@@ -45,6 +46,17 @@
 		if (showCookie !== null) showCookieModal = JSON.parse(showCookie);
 		else showCookieModal = true;
 	});
+
+	const resetScroll = () => {
+		requestAnimationFrame(() => {
+			window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		});
+	};
+
+	beforeNavigate(resetScroll);
+	afterNavigate(resetScroll);
 </script>
 
 <svelte:body use:cssVariables={{ background: $customBackground }} />
@@ -140,11 +152,11 @@
 		width: 100%;
 		min-height: 100vh;
 		max-width: 900px;
-
+		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		padding: 0 16px;
+		padding: 10px;
 	}
 
 	:global(html),
@@ -164,9 +176,8 @@
 		color: white;
 		margin: 0;
 		box-sizing: border-box;
-		display: grid;
+		display: block;
 		line-height: 1.75;
-		place-items: center;
 		min-height: 100vh;
 		overflow-x: hidden;
 	}
