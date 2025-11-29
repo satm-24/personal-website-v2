@@ -20,9 +20,9 @@
 	<div>
 		<h1 id="header">
 			<div class="typewriter">
-				<h3>
+				<div>
 					<span id="print">print</span>(<span id="greeting">"Hi! I'm Satwik Misra"</span>)
-				</h3>
+				</div>
 			</div>
 			<p class="subtitle">Technical Product Manager @ Cognex Corp</p>
 			<p class="description">

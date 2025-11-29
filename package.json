@@ -19,9 +19,11 @@
 		"@types/cookie": "^0.5.1",
 		"@typescript-eslint/eslint-plugin": "^5.61.0",
 		"@typescript-eslint/parser": "^5.61.0",
-		"eslint": "^8.44.0",
 		"eslint-config-prettier": "^8.8.0",
 		"eslint-plugin-svelte": "^2.45.1",
+		"flowbite": "^4.0.1",
+		"flowbite-svelte": "^1.28.3",
+		"flowbite-svelte-icons": "^3.0.0",
 		"prettier": "^3.1.0",
 		"prettier-plugin-svelte": "^3.2.6",
 		"sass": "^1.63.6",
@@ -34,6 +36,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"pdfjs-dist": "^4.0.379"
+		"pdfjs-dist": "^4.0.379",
+		"tailwind": "^4.0.0",
+		"tailwindcss": "^4.1.17"
 	}
 }

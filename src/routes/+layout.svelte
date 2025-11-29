@@ -10,6 +10,7 @@
 	import { onMount, tick } from 'svelte';
 	import { customBackground } from '$lib/store';
 	import { Email } from '$lib/Constants';
+	
 
 	let copied = false;
 	const cookieEnabled = false;
@@ -130,6 +131,10 @@
 </footer>
 
 <style>
+
+	@import "tailwindcss";
+	@plugin 'flowbite/plugin';
+
 	* {
 		box-sizing: border-box;
 	}
